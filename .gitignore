@@ -16,3 +16,6 @@ docs/dist
 changelog.generated.md
 test/coverage
 vetur
+
+.sonarlint
+.scannerwork

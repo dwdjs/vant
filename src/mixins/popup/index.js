@@ -151,11 +151,13 @@ export const PopupMixin = {
         status = '10';
       }
 
+      // Bitwise operators should not be used in boolean contexts
+      const bitwise = !(parseInt(status, 2) & parseInt(direction, 2));
       /* istanbul ignore next */
       if (
         status !== '11' &&
         this.direction === 'vertical' &&
-        !(parseInt(status, 2) & parseInt(direction, 2))
+        bitwise
       ) {
         preventDefault(event, true);
       }
