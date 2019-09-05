@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import VantDoc from 'vant/doc';
+import VantDoc from '@vant/doc';
 import App from './App';
 import routes from '../router';
 import { isMobile, importAll } from '../utils';
