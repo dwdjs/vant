@@ -1,5 +1,5 @@
 {
-  "name": "vant",
+  "name": "@dwdjs/vant",
   "version": "2.1.8",
   "description": "Mobile UI Components built on Vue",
   "main": "lib/index.js",
