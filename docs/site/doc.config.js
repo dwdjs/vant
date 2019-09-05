@@ -3,7 +3,7 @@ import pkgJson from '../../package.json';
 const { version } = pkgJson;
 
 export const searchConfig = {
-  apiKey: '90067aecdaa2c85220e2783cd305caac',
+  apiKey: 'f8a740a50f5b3160fd66780326c1a19c',
   indexName: 'vant'
 };
 
