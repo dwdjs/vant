@@ -5,11 +5,11 @@ UI components of Vant document site
 #### NPM
 
 ```shell
-npm i @vant/doc -D
+npm i @dwdjs/doc -D
 ```
 
 #### YARN
 
 ```shell
-yarn add @vant/doc --dev
+yarn add @dwdjs/doc --dev
 ```
