@@ -84,7 +84,7 @@ export default {
 通过`active-color`属性可以自定义菜单标题和选项的选中态颜色
 
 ```html
-<van-dropdown-menu active-color="#f44">
+<van-dropdown-menu active-color="#ee0a24">
   <van-dropdown-item v-model="value1" :options="option1" />
   <van-dropdown-item v-model="value2" :options="option2" />
 </van-dropdown-menu>
@@ -157,4 +157,4 @@ export default {
 |------|------|------|
 | text | 文字 | *string* |
 | value | 标识符 | *string \| number* |
-| icon | 左侧图标名称或图片链接，可选值见 Icon 组件 | *string* |
+| icon | 左侧图标名称或图片链接，可选值见 [Icon 组件](/#/zh-CN/icon) | *string* |

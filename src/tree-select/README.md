@@ -64,14 +64,8 @@ export default {
   :main-active-index.sync="activeIndex"
 >
   <template slot="content">
-    <van-image
-      v-if="activeIndex === 0"
-      src="https://img.yzcdn.cn/vant/apple-1.jpg"
-    />
-    <van-image
-      v-if="activeIndex === 1"
-      src="https://img.yzcdn.cn/vant/apple-2.jpg"
-    />
+    <van-image v-if="activeIndex === 0" src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+    <van-image v-if="activeIndex === 1" src="https://img.yzcdn.cn/vant/apple-2.jpg" />
   </template>
 </van-tree-select>
 ```
@@ -82,6 +76,30 @@ export default {
     return {
       activeIndex: 0,
       items: [{ text: 'Group 1' }, { text: 'Group 2' }]
+    }
+  }
+}
+```
+
+### Show Info
+
+```html
+<van-tree-select
+  height="55vw"
+  :items="items"
+  :main-active-index.sync="activeIndex"
+/>
+```
+
+```js
+export default {
+  data() {
+    return {
+      activeIndex: 0,
+      items: [
+        { text: 'Group 1', children: [], dot: true },
+        { text: 'Group 2', children: [], info: 5 }
+      ]
     }
   }
 }
@@ -123,6 +141,10 @@ In every tree object, `text` property defines `id` stands for the unique key whi
   {
     // name of the parent node
     text: 'Group 1',
+    // info
+    info: 3,
+    // Whether to show red dot
+    dot: true,
     // leaves of this parent node
     children: [
       {
